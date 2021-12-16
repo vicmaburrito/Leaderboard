@@ -11,6 +11,19 @@ The leaderboard website displays scores submitted by different players. It also 
 - HTML 5
 - CSS 3
 
+## Usage
+### Local installation
+```console
+$ git clone git@github.com:vicmaburrito/Leaderboard.
+$ cd Leaderboard
+$ npm install 
+```
+
+### To run the project
+```console
+$ npm start 
+```
+
 ## Live Demo
 
 [Live Demo Link](##)
