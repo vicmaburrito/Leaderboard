@@ -15,12 +15,12 @@ const PostToApi = async () => {
     await fetch(API_URL, {
       method: 'POST',
       headers: {
-        'Content-type': 'application/json;',
+        'Content-type': 'application/json; charset=UTF-8',
       },
       body: JSON.stringify(userData),
     });
   } catch (error) {
-    logMyErrors(error);
+    error(error);
   }
 };
 
