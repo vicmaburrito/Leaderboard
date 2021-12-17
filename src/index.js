@@ -4,6 +4,13 @@ import 'bootstrap/dist/css/bootstrap.css';
 const gameID = 'OyWOyYBAfoODiap1EhZ8';
 const API_URL = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameID}/scores/`;
 const tbody = document.getElementById('tbody');
+const searchID = (id) => document.getElementById(id);
+
+const PostToApi = async () => {
+  const user = searchID('user').value;
+  const score = searchID('score').value;
+  const userData = { user, score };
+};
 
 const dData = async () => {
   try {
@@ -36,5 +43,13 @@ const dData = async () => {
     throw new Error(error.message);
   }
 };
+
+const form = document.getElementById('form');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  tbody.innerHTML = '';
+  PostToApi();
+  dData();
+});
 
 dData();
