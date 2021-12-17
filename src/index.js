@@ -20,7 +20,7 @@ const PostToApi = async () => {
       body: JSON.stringify(userData),
     });
   } catch (error) {
-    error(error);
+    throw new Error(error.message);
   }
 };
 
@@ -55,6 +55,12 @@ const dData = async () => {
     throw new Error(error.message);
   }
 };
+
+const refresh = document.getElementById('refresh');
+refresh.addEventListener('click', () => {
+  tbody.innerHTML = '';
+  dData();
+});
 
 const form = document.getElementById('form');
 form.addEventListener('submit', (e) => {
