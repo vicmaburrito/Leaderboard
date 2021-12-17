@@ -10,6 +10,18 @@ const PostToApi = async () => {
   const user = searchID('user').value;
   const score = searchID('score').value;
   const userData = { user, score };
+
+  try {
+    await fetch(API_URL, {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json;',
+      },
+      body: JSON.stringify(userData),
+    });
+  } catch (error) {
+    logMyErrors(error);
+  }
 };
 
 const dData = async () => {
