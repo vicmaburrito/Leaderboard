@@ -24,6 +24,34 @@ $ npm install
 $ npm start 
 ```
 
+### API 
+The current API in production is [Leaderboard](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3)
+
+#### **Endpoints**
+
+**/games/**
+
+Allowed actions:
+
+- POST to create a new game
+
+Mandatory parameters for POST action:
+
+- name: name of the game
+
+Parameters example for POST action (sent in the body of the request in JSON format):
+```JSON
+{ 
+	"name": "Hello there!" 
+}
+```
+Return value: unique identifier for the game
+```JSON
+{ 
+	"result": "Game with ID: OyWOyYBAfoODiap1EhZ8 added."
+}
+```
+
 ## Live Demo
 
 [Live Demo Link](https://vicmaburrito.github.io/Leaderboard/dist/index.html)
