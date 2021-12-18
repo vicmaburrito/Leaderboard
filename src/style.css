@@ -1,17 +1,45 @@
+* {
+  /* stylelint-disable */
+  font-family: 'Balsamiq Sans';
+  /* stylelint-enable */
+  font-weight: 900;
+  color: black;
+}
+
 input.my-2 {
   width: 70%;
 }
 
-input.btn {
+.btn-scr,
+.btn-form,
+.inp-st {
   width: fit-content;
-  align-self: flex-end;
+  border: 3px solid black;
+  border-radius: 5%;
+  padding: 0.2em 0.5rem;
+  box-shadow: 4px 3px black;
+  background: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn-form {
   margin-right: 30%;
 }
 
 .leaderboard {
   margin: 5px;
-  border-width: 1px;
+  border-width: 5px;
   border-style: solid;
   border-color: black;
   border-radius: 5px;
+  height: 350px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }
