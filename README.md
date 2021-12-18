@@ -26,7 +26,7 @@ $ npm start
 
 ## Live Demo
 
-[Live Demo Link](##)
+[Live Demo Link](https://vicmaburrito.github.io/Leaderboard/dist/index.html)
 
 ## Authors
 
