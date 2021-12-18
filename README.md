@@ -24,10 +24,10 @@ $ npm install
 $ npm start 
 ```
 
-### API 
+## API 
 The current API in production is [Leaderboard](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3)
 
-#### **Endpoints**
+### **Endpoints**
 
 **/games/**
 
