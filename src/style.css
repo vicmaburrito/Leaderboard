@@ -10,9 +10,9 @@ input.my-2 {
   width: 70%;
 }
 
-.btn-scr, 
-     .btn-form, 
-     .inp-st{
+.btn-scr,
+.btn-form,
+.inp-st {
   width: fit-content;
   border: 3px solid black;
   border-radius: 5%;
@@ -36,7 +36,6 @@ input.my-2 {
   height: 350px;
   overflow: scroll;
   overflow-x: hidden;
-  border-radius: 10px;
 }
 
 footer {
